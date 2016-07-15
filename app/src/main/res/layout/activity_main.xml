@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/catText"
+        android:text="The Cat Museum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-light"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/cat_image"
+        android:id="@+id/imageCat"
+        android:layout_below="@id/catText"/>
+
+    <TextView
+    android:id="@+id/about"
+    android:text="About Cat Museum"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="25sp"
+    android:padding="10dp"
+    android:fontFamily="sans-serif-light"
+    android:layout_below="@id/imageCat"
+    android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/aboutMuseum"
+        android:text="The world’s first… “The Cat Museum &amp; Mansion” is Singapore’s tribute to the mystical, magnetic and maniacally amusing CAT. Singapore or Singa-pura (in Malay) is named after the biggest cat of all and means LION CITY."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+    android:id="@+id/address"
+    android:text="Address:"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/aboutMuseum"
+    android:layout_alignParentLeft="true"
+    android:layout_centerInParent="true"
+    android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/operatingHours"
+        android:text="Operating Hours:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/contact"
+        android:text="Contact:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/fullOperating2"
+        android:layout_toLeftOf="@+id/catText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/no"
+        android:text="6336 2133"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/fullOperating2"
+        android:layout_alignLeft="@+id/fullOperating2"
+        android:layout_alignStart="@+id/fullOperating2" />
+
+    <TextView
+        android:id="@+id/fulladdress"
+        android:text="8 Purvis Street, #02-02 Singapore 188587"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp"
+        android:layout_below="@+id/aboutMuseum"
+        android:layout_toRightOf="@+id/operatingHours"
+        android:layout_toEndOf="@+id/operatingHours" />
+
+    <TextView
+        android:id="@+id/fullOperating"
+        android:text="Fridays: 4.30pm – 7.30pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignBaseline="@+id/operatingHours"
+        android:layout_alignBottom="@+id/operatingHours"
+        android:layout_toRightOf="@+id/operatingHours"
+        android:layout_toEndOf="@+id/operatingHours" />
+
+    <TextView
+    android:id="@+id/fullOperating2"
+    android:text="Saturdays/Sundays: 12noon – 7.30pm "
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/fullOperating"
+        android:layout_toRightOf="@+id/operatingHours"
+        android:layout_toEndOf="@+id/operatingHours" />
+</RelativeLayout>
